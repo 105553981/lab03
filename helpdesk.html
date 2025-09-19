@@ -15,7 +15,7 @@
       The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday
     </p>
   </header>
-  <form action="">
+  <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
     <fieldset>
       <legend>Student details</legend>
       <p>
@@ -72,9 +72,10 @@
     <fieldset>
       <legend>Preferred Date/Time</legend>
       <p><label for="date">Date</label>
-        <input type="date" pattern="\d{2}/\d{2}/\d{4}" name="date" id="date" maxlength="10" size="10" />
+        <input type="text" pattern="\d{2}/\d{2}/\d{4}" name="date" id="date" placeholder="dd-mm-yyyy" maxlength="10"
+          size="10" />
       <p><label for="time">Time</label>
-        <input type="time" pattern="^([01]\d|2[0-3]):([0-5]\d)$" name="time" id="time" placeholder="00:00"
+        <input type="text" pattern="^([01]\d|2[0-3]):([0-5]\d)$" name="time" id="time" placeholder="00:00"
           maxlength="10" size="10" />
     </fieldset>
     <input type="submit" value="Book" />
