@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <img src="../lab03-1/z7027509905815_137fbffe589735417d5ded207943923f.jpg" alt="">
+    <h1>CWA Help Desk Appointment</h1>
+    <p>
+      The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday
+    </p>
+  </header>
+  <form action="">
+    <fieldset>
+      <legend>Student details</legend>
+      <p>
+        <label for="Student_ID">Student ID</label>
+        <input type="text" name="Student_ID" id="Student_ID" maxlength="20" size="10" required="required" />
+      </p>
+      <label for="Given_Name">Given Name</label>
+      <input type="text" name="Given_Name" id="Student-ID" maxlength="20" size="10" required="required" />
+      <label for="Family_Name">Family Name</label>
+      <input type="text" name="Family_Name" id="Family_Name" maxlength="20" size="10" required="required" />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Your unit
+      </legend>
+      <p>
+        <label for="cos10011">COS10011</label>
+        <input type="radio" id="cos10011" name="cos10011" value="cos10011" />
+        <label for="cos60004">COS60007</label>
+        <input type="radio" id="cos60004" name="cos60004" value="cos60004" />
+        <label for="cos60004">COS60007</label>
+        <input type="radio" id="cos60004" name="cos60004" value="cos60004" />
+      </p>
+      <p>
+        <label for="your_tutor">Your Tutor</label>
+        <select name="your_tutor" id="your_tutor">
+          <option value="Please_Select">Please Select</option>
+        </select>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Issue</legend>
+      <p>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="HTML" value="HTML" />
+
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="CSS" name="CSS" value="CSS" />
+
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript" />
+
+        <label for="PHP">PHP</label>
+        <input type="checkbox" id="PHP" name="PHP" value="PHP" ] />
+
+        <label for="MySQL">MySQL</label>
+        <input type="checkbox" id="MySQL" name="MySQL" value="MySQL" />
+      </p>
+      <p>Description of Issue</p>
+      <textarea id="desciption_issue" name="desciption_issue" rows="4" cols="40"
+        placeholder="Write description of your problem here..."></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Preferred Date/Time</legend>
+      <p><label for="date">Date</label>
+        <input type="date" pattern="\d{2}/\d{2}/\d{4}" name="date" id="date" maxlength="10" size="10" />
+      <p><label for="time">Time</label>
+        <input type="time" pattern="^([01]\d|2[0-3]):([0-5]\d)$" name="time" id="time" placeholder="00:00"
+          maxlength="10" size="10" />
+    </fieldset>
+    <input type="submit" value="Book" />
+    <input type="reset" value="Reset Form" />
+
+  </form>
+</body>
+
+</html>
